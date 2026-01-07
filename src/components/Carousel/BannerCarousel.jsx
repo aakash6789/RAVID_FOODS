@@ -44,6 +44,7 @@ export default function BannerCarousel() {
 
       {/* Soft professional overlay */}
       <div className="absolute inset-0 bg-gradient-to-r from-white/85 via-white/60 to-transparent" />
+      {/* <div className="absolute inset-0 bg-gradient-to-l from-white/55 via-white/60 to-transparent" /> */}
 {/* <div className="absolute inset-0 bg-gradient-to-r from-white via-white/80 to-white/20" /> */}
 {/* <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_30%,rgba(255,255,255,0.4),transparent_60%)]" /> */}
       {/* Content */}
@@ -73,7 +74,10 @@ export default function BannerCarousel() {
       </div>
 
       {/* Subtle bottom fade */}
+      <div className="absolute top-0 left-0 right-0 h-10 bg-gradient-to-b from-white to-transparent" />
+
       <div className="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-white to-transparent" />
+      {/* <div className="absolute top-0 left-0 right-0 h-0 bg-gradient-to-t from-transparent to-white" /> */}
     </section>
   );
 }

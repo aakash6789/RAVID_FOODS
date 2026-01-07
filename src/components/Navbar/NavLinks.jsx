@@ -5,7 +5,7 @@ const NavLinks = () => {
     return (
         <>
             <HashLink className="
-    relative inline-block font-semibold text-black hover:text-orange-400
+    relative inline-block font-semibold text-black hover:text-orange-600
     after:absolute after:left-0 after:-bottom-1
     after:h-[2px] after:w-0 after:bg-black
     after:transition-all after:duration-300 after:ease-out
@@ -14,7 +14,7 @@ const NavLinks = () => {
                 About
             </HashLink>
             <HashLink className="
-    relative inline-block font-semibold text-black hover:text-orange-400
+    relative inline-block font-semibold text-black hover:text-orange-600
     after:absolute after:left-0 after:-bottom-1
     after:h-[2px] after:w-0 after:bg-black
     after:transition-all after:duration-300 after:ease-out
@@ -29,7 +29,7 @@ const NavLinks = () => {
 <HashLink
   to="/"
   className="
-    relative inline-block font-semibold text-black hover:text-orange-400
+    relative inline-block font-semibold text-black hover:text-orange-600
     after:absolute after:left-0 after:-bottom-1
     after:h-[2px] after:w-0 after:bg-black
     after:transition-all after:duration-300 after:ease-out
@@ -42,7 +42,16 @@ const NavLinks = () => {
 
 
             <HashLink className="
-    relative inline-block font-semibold text-black hover:text-orange-400
+    relative inline-block font-semibold text-black hover:text-orange-600
+    after:absolute after:left-0 after:-bottom-1
+    after:h-[2px] after:w-0 after:bg-black
+    after:transition-all after:duration-300 after:ease-out
+    hover:after:w-full
+  " to="/contact#contact">
+                Blogs
+            </HashLink>
+            <HashLink className="
+    relative inline-block font-semibold text-black hover:text-orange-600
     after:absolute after:left-0 after:-bottom-1
     after:h-[2px] after:w-0 after:bg-black
     after:transition-all after:duration-300 after:ease-out

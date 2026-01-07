@@ -25,7 +25,9 @@ const NavBar = () => {
             <div className="flex flex-row justify-between items-center py-2">
                 <div className="flex flex-row justify-center md:px-4 md:mx-12 items-center text-center font-semibold">
                
-                    <HashLink smooth to="/#hero"> <img src={RavidFoodLogo} className='w-[25%]' alt="Ravid Food Logo" /></HashLink>
+                    <HashLink smooth to="/#hero"> <img src={RavidFoodLogo} className='w-[25%]' alt="Ravid Food Logo" />
+                    {/* <span className='text-orange-600 absoloute'>Ravid Foods</span> */}
+                    </HashLink>
                 </div>
                 <div className="group flex flex-col items-center">
                     <button className="p-2 rounded-lg lg:hidden text-blue-900" onClick={handleClick}>
@@ -38,7 +40,7 @@ const NavBar = () => {
                             )}
                         </svg>
                     </button>
-                    <div className='hidden space-x-16 lg:inline-block p-5 px-14'>
+                    <div className='hidden space-x-28 lg:inline-block p-5 px-14'>
                         <NavLinks />
                     </div>
 
