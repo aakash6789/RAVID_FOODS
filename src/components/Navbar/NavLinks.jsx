@@ -1,11 +1,11 @@
 import React from 'react';
 import { HashLink } from 'react-router-hash-link';
-
+import ProductsMenu from './ProductsLinks';
 const NavLinks = () => {
     return (
         <>
             <HashLink className="
-    relative inline-block font-semibold text-black hover:text-orange-600
+    relative text-[0.9rem] inline-block font-semibold text-black hover:text-orange-600
     after:absolute after:left-0 after:-bottom-1
     after:h-[2px] after:w-0 after:bg-black
     after:transition-all after:duration-300 after:ease-out
@@ -13,23 +13,24 @@ const NavLinks = () => {
   " smooth to="/#about">
                 About
             </HashLink>
-            <HashLink className="
-    relative inline-block font-semibold text-black hover:text-orange-600
+            {/* <HashLink className="
+    relative text-[0.9rem]  inline-block font-semibold text-black hover:text-orange-600
     after:absolute after:left-0 after:-bottom-1
     after:h-[2px] after:w-0 after:bg-black
     after:transition-all after:duration-300 after:ease-out
     hover:after:w-full
   " smooth to="/#products">
                 Products
-            </HashLink>
-            {/* <HashLink className="px-4 font-semibold text-black hover:text-gray-200 hover:underline" to="/">
-                Portfolio
             </HashLink> */}
+<div className="hidden lg:inline-block">
+  <ProductsMenu />
+</div>
+
         
 <HashLink
   to="/"
   className="
-    relative inline-block font-semibold text-black hover:text-orange-600
+    relative text-[0.9rem]  inline-block font-semibold text-black hover:text-orange-600
     after:absolute after:left-0 after:-bottom-1
     after:h-[2px] after:w-0 after:bg-black
     after:transition-all after:duration-300 after:ease-out
@@ -42,7 +43,7 @@ const NavLinks = () => {
 
 
             <HashLink className="
-    relative inline-block font-semibold text-black hover:text-orange-600
+    relative text-[0.9rem]  inline-block font-semibold text-black hover:text-orange-600
     after:absolute after:left-0 after:-bottom-1
     after:h-[2px] after:w-0 after:bg-black
     after:transition-all after:duration-300 after:ease-out
@@ -51,7 +52,7 @@ const NavLinks = () => {
                 Blogs
             </HashLink>
             <HashLink className="
-    relative inline-block font-semibold text-black hover:text-orange-600
+    relative text-[0.9rem]  inline-block font-semibold text-black hover:text-orange-600
     after:absolute after:left-0 after:-bottom-1
     after:h-[2px] after:w-0 after:bg-black
     after:transition-all after:duration-300 after:ease-out

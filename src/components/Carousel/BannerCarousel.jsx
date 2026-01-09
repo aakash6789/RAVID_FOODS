@@ -51,7 +51,7 @@ export default function BannerCarousel() {
       <div className="relative z-10 h-full flex items-center">
         <div className="max-w-4xl ml-auto px-2">
           <div className="max-w-xl">
-            <h1 className="text-3xl sm:text-4xl lg:text-4xl font-semibold text-black leading-tight">
+            <h1 className="text-3xl sm:text-4xl lg:text-3xl font-semibold text-black leading-tight">
               Freeze-Dried Ingredients for Scalable Food Brands
             </h1>
 
@@ -61,11 +61,11 @@ export default function BannerCarousel() {
             </p> */}
 
             <div className="mt-8 flex flex-wrap gap-4">
-              <button className="px-6 py-3 bg-gray-900 text-white rounded-md text-sm font-medium hover:bg-gray-800 transition">
+              <button className="px-4 py-2 bg-gray-900 text-white rounded-md text-[0.8rem]  hover:bg-gray-800 transition">
                 Request Samples
               </button>
 
-              <button className="px-6 py-3 border border-gray-300 text-gray-800 rounded-md text-sm font-medium hover:bg-gray-100 transition">
+              <button className="px-4 py-2 border border-gray-300 text-gray-800 rounded-md text-sm  hover:bg-gray-100 transition">
                 Talk to Sales
               </button>
             </div>
@@ -74,7 +74,7 @@ export default function BannerCarousel() {
       </div>
 
       {/* Subtle bottom fade */}
-      <div className="absolute top-0 left-0 right-0 h-10 bg-gradient-to-b from-white to-transparent" />
+      <div className="absolute top-0 left-0 right-0 h-40 bg-gradient-to-b from-white to-transparent" />
 
       <div className="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-white to-transparent" />
       {/* <div className="absolute top-0 left-0 right-0 h-0 bg-gradient-to-t from-transparent to-white" /> */}

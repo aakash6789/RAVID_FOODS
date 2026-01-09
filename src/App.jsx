@@ -11,10 +11,10 @@ import {
 import Home from './pages/Home.jsx';
 import Contact from './pages/Contact.jsx';
 import DemoProduct from './pages/DemoProduct.jsx';
-
+import ProductDetail from './pages/ProductDetails.jsx';
 import {useDocTitle} from './components/CustomHook';
 import ScrollToTop from './components/ScrollToTop';
-
+import ProductPage from './pages/ProductPage.jsx';
 function App() {
   useEffect(() => {
     const aos_init = () => {
@@ -39,6 +39,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/products/:slug" element={<ProductPage/>} />
             <Route path="/get-demo" element={<DemoProduct />} /> 
           </Routes>
         </ScrollToTop>
