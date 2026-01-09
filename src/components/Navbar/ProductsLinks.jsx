@@ -1,5 +1,6 @@
 import React, { useState, useEffect,useRef } from 'react';
 import PRODUCT_CATEGORIES from '../../data/productsListData';
+import { NavLink } from 'react-router-dom';
 // const ProductsMenu = () => {
 //   const [open, setOpen] = useState(false);
 
@@ -104,7 +105,7 @@ const ProductsMenu = () => {
         <div className="flex justify-center">
         <div className="max-w-7xl mx-auto px-10 py-12">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
-            {PRODUCT_CATEGORIES.map((cat) => (
+            {/* {PRODUCT_CATEGORIES.map((cat) => (
               <div key={cat.title}>
                 <h4 className="text-sm font-bold text-gray-900 mb-4 uppercase tracking-wide">
                   {cat.title}
@@ -120,7 +121,42 @@ const ProductsMenu = () => {
                   ))}
                 </ul>
               </div>
-            ))}
+            ))} */}
+            {PRODUCT_CATEGORIES.map((cat) => {
+  const visibleItems = cat.items.slice(0, 10);
+  const hasMore = cat.items.length > 10;
+
+  return (
+    <div key={cat.title}>
+      <h4 className="text-sm font-bold text-gray-900 mb-4 uppercase tracking-wide">
+        {cat.title}
+      </h4>
+
+      <ul className="space-y-2">
+        {visibleItems.map((item) => (
+          <li
+            key={item}
+            className="text-sm text-gray-700 hover:text-orange-600 cursor-pointer transition"
+          >
+            {item}
+          </li>
+        ))}
+
+        {hasMore && (
+          <li>
+            <NavLink
+              to={cat.route}
+              className="text-sm font-semibold text-orange-600 hover:text-orange-700 transition"
+            >
+              View More →
+            </NavLink>
+          </li>
+        )}
+      </ul>
+    </div>
+  );
+})}
+
           </div>
         </div>
         </div>

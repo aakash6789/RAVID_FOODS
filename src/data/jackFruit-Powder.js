@@ -1,3 +1,5 @@
+import jackFruit1 from '../images/clients/jackfruitpdt1.png'
+import jackFruit2 from '../images/clients/jackfruitpdt1.png'
 const jackfruitPowder = {
   slug: "freeze-dried-jackfruit-powder",
   name: "Freeze Dried Jackfruit Powder",
@@ -11,11 +13,8 @@ const jackfruitPowder = {
     "Freeze-Dried Jackfruit Powder is produced from fresh, ripe jackfruits that are gently freeze-dried to preserve their natural sweetness, flavor, color, and nutrients. The process removes moisture while retaining the fruit’s original aroma and taste, resulting in a fine, free-flowing powder. It is 100% natural, without added sugar, preservatives, or artificial colors, making it suitable for food, beverage, nutraceutical, and ready-to-eat applications.",
 
   images: {
-    hero: "/images/jackfruit-powder/hero.webp",
     gallery: [
-      "/images/jackfruit-powder/1.webp",
-      "/images/jackfruit-powder/2.webp",
-      "/images/jackfruit-powder/3.webp",
+      jackFruit1,jackFruit2
     ],
   },
 
