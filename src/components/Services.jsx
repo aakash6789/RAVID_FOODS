@@ -12,7 +12,7 @@ const Services = () => {
 
     return (
         <div id="services" className="bg-white py-12" >
-            <section data-aos="zoom-in-down">
+            {/* <section data-aos="zoom-in-down">
                     <div className="my-4 py-4">
                         <h2 className="my-2 text-center text-3xl text-black uppercase font-bold">services</h2>
                         
@@ -94,7 +94,7 @@ const Services = () => {
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> */}
         </div>
     )
 }

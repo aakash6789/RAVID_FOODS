@@ -1,113 +1,182 @@
+
+// import React from 'react';
+// import { Link } from 'react-router-dom';
+// import { HashLink } from 'react-router-hash-link';
+
+// const Footer = () => {
+//     return (
+//         <footer className="bg-gray-900 text-gray-300">
+//             {/* Main Footer Content */}
+//             <div className="max-w-7xl mx-auto px-6 py-16">
+//                 <div className="grid grid-cols-1 md:grid-cols-12 gap-12 lg:gap-8">
+                    
+//                     {/* 1st block: Company Info */}
+//                     <div className="col-span-12 lg:col-span-4">
+//                         <div className="flex flex-col space-y-6">
+//                             <h3 className="text-3xl font-serif font-bold text-white tracking-tight">
+//                                 RAVID<span className="text-orange-500">FOODS</span>
+//                             </h3>
+//                             <p className="text-sm leading-relaxed max-w-xs text-gray-400">
+//                                 Leading the way in premium freeze-dried nutrition. We provide scalable, high-quality food solutions for global brands and institutions.
+//                             </p>
+//                             <div className="text-sm space-y-1 italic text-gray-500">
+//                                 <p>Corporate Headquarters</p>
+//                                 <p>Industrial Zone, Phase II</p>
+//                                 <p>Umbergaon,Gujrat,India</p>
+//                             </div>
+//                         </div>
+//                     </div>
+
+//                     {/* 2nd block: Quick Links */}
+//                     <div className="col-span-6 md:col-span-3 lg:col-span-2">
+//                         <h6 className="text-white text-sm font-bold uppercase tracking-widest mb-6">Company</h6>
+//                         <ul className="space-y-4 text-sm">
+//                             <li><HashLink to="/#hero" className="hover:text-orange-500 transition-colors">Home</HashLink></li>
+//                             <li><HashLink to="/#about" className="hover:text-orange-500 transition-colors">About Us</HashLink></li>
+//                             <li><HashLink to="/#portfolio" className="hover:text-orange-500 transition-colors">Product Range</HashLink></li>
+//                             <li><Link to="/contact" className="hover:text-orange-500 transition-colors">Contact</Link></li>
+//                         </ul>
+//                     </div>
+
+//                     {/* 3rd block: Products */}
+//                     <div className="col-span-6 md:col-span-3 lg:col-span-3">
+//                         <h6 className="text-white text-sm font-bold uppercase tracking-widest mb-6">Our Solutions</h6>
+//                         <ul className="space-y-4 text-sm">
+//                             <li><Link to="#" className="hover:text-orange-500 transition-colors">Freeze-Dried Fruits</Link></li>
+//                             <li><Link to="#" className="hover:text-orange-500 transition-colors">Freeze-Dried Vegetables</Link></li>
+//                             <li><Link to="#" className="hover:text-orange-500 transition-colors">Premium Spice Masalas</Link></li>
+//                             <li><Link to="#" className="hover:text-orange-500 transition-colors">Custom Bulk Formulations</Link></li>
+//                         </ul>
+//                     </div>
+
+//                     {/* 4th block: Social & Newsletter */}
+//                     <div className="col-span-12 md:col-span-6 lg:col-span-3">
+//                         <h6 className="text-white text-sm font-bold uppercase tracking-widest mb-6">Connect With Us</h6>
+//                         <p className="text-xs text-gray-500 mb-4 uppercase font-semibold">Follow our journey</p>
+//                         <div className="flex space-x-4 mb-8">
+//                             <Link to="#" className="p-2 bg-gray-800 rounded-full hover:bg-orange-500 hover:text-white transition-all">
+//                                 <svg className="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/></svg>
+//                             </Link>
+//                             <Link to="#" className="p-2 bg-gray-800 rounded-full hover:bg-orange-500 hover:text-white transition-all">
+//                                 <svg className="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/></svg>
+//                             </Link>
+//                             <Link to="#" className="p-2 bg-gray-800 rounded-full hover:bg-orange-500 hover:text-white transition-all">
+//                                 <svg className="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+//                             </Link>
+//                         </div>
+//                         <Link to="/contact" className="text-xs font-bold border-b border-orange-500 text-orange-500 hover:text-white hover:border-white transition-all">
+//                             REQUEST BULK PRICING →
+//                         </Link>
+//                     </div>
+//                 </div>
+//             </div>
+
+//             {/* Bottom Bar */}
+//             <div className="bg-black py-8">
+//                 <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center text-xs text-gray-500 space-y-4 md:space-y-0">
+//                     <p>Copyright &copy; {new Date().getFullYear()} Ravid Foods Limited. All rights reserved.</p>
+//                     <div className="flex space-x-6">
+//                         <Link to="#" className="hover:text-white">Privacy Policy</Link>
+//                         <Link to="#" className="hover:text-white">Terms of Supply</Link>
+//                         <Link to="#" className="hover:text-white">Cookie Settings</Link>
+//                     </div>
+//                 </div>
+//             </div>
+//         </footer>
+//     );
+// }
+
+// export default Footer;
+
+
+
 import React from 'react';
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 
 const Footer = () => {
     return (
-        <>
-            <footer>
-                <div className="footer max-w-full mx-auto px-4 sm:px-6 bg-gray-100 border-t border-b py-30">
-
-                    {/* Top area: Blocks */}
-                    <div className="grid sm:grid-cols-12 gap-5 py-8 md:py-12 border-t border-gray-200 lg:ml-11">
-
-                    {/* 1st block */}
-                    <div className="col-span-12 lg:col-span-4">
-                        <div className="box-border border-b-4 border-blue-900 p-8 bg-gray-200 text-gray-600 text-center rounded-lg xl:w-80 mx-auto">
-                            <h3 className="font-bold text-4xl mb-4">MLD</h3>
-                            <div className='text-md font-medium text-gray-600'>
-                                <h5>Molad e Konsult</h5>
-                                <p>Ilo Awela,</p>
-                                <p>Ota,</p>
-                                <p>Ogun State.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    {/* 2nd block */}
-                    <div className="col-span-6 md:col-span-6 lg:col-span-1 ml-7 mx-auto">
-                        <h6 className="text-[#013289] text-xl font-bold mb-4">LINKS</h6>
-                        <ul className="text-md">
-                        <li className="mb-2">
-                            <HashLink to="#" className="text-[#013289] hover:text-gray-900 hover:tracking-wider transition duration-250 ease-in-out">About</HashLink>
-                        </li>
-                        <li className="mb-2">
-                            <HashLink to="#" className="text-[#013289] hover:text-gray-900 hover:tracking-wider transition duration-250 ease-in-out">Services</HashLink>
-                        </li>
-                        <li className="mb-2">
-                            <HashLink to="#" className="text-[#013289] hover:text-gray-900 hover:tracking-wider transition duration-250 ease-in-out">Contact</HashLink>
-                        </li>                            
-                        </ul>
-                    </div>
-
-                    {/* 3rd block */}
-                    <div className="col-span-6 md:col-span-6 lg:col-span-4 mx-auto">
-                        <h6 className="text-[#013289] text-xl font-bold mb-4">OUR SERVICES</h6>
-                        <ul className="text-md">
-                        <li className="mb-2">
-                            <Link to="#" className="text-[#013289] hover:text-gray-900 hover:tracking-wider transition duration-250 ease-in-out">Web Development</Link>
-                        </li>
-                        <li className="mb-2">
-                            <Link to="#" className="text-[#013289] hover:text-gray-900 hover:tracking-wider transition duration-250 ease-in-out">Mobile App Development</Link>
-                        </li>
-                        <li className="mb-2">
-                            <Link to="#" className="text-[#013289] hover:text-gray-900 hover:tracking-wider transition duration-250 ease-in-out">Domain and Hosting</Link>
-                        </li>
-                        <li className="mb-2">
-                            <Link to="#" className="text-[#013289] hover:text-gray-900 hover:tracking-wider transition duration-250 ease-in-out">General IT Consultations</Link>
-                        </li>
-                        </ul>
-                    </div>
-
-                    {/* 4th block */}
-                    <div className="col-span-12 text-center mx-auto lg:col-span-3 font-bold uppercase text-blue-900">
-                        <div className="text-xl mb-6">
-                            Social Media Links.
-                        </div>
-
-                                <div className="text-md font-medium mb-6">
-                                    Follow us on social media.
-                                </div>
-                        <div className="mx-auto text-center mt-2">
-                                <ul className="flex justify-center mb-4 md:mb-0">
-                                    <li>
-                                        <Link to="#" className="flex justify-center items-center text-blue-900 hover:text-gray-500 bg-white hover:bg-white-100 rounded-full shadow transition duration-150 ease-in-out" aria-label="Twitter">
-                                        <svg className="w-8 h-8 fill-current" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M24 11.5c-.6.3-1.2.4-1.9.5.7-.4 1.2-1 1.4-1.8-.6.4-1.3.6-2.1.8-.6-.6-1.5-1-2.4-1-1.7 0-3.2 1.5-3.2 3.3 0 .3 0 .5.1.7-2.7-.1-5.2-1.4-6.8-3.4-.3.5-.4 1-.4 1.7 0 1.1.6 2.1 1.5 2.7-.5 0-1-.2-1.5-.4 0 1.6 1.1 2.9 2.6 3.2-.3.1-.6.1-.9.1-.2 0-.4 0-.6-.1.4 1.3 1.6 2.3 3.1 2.3-1.1.9-2.5 1.4-4.1 1.4H8c1.5.9 3.2 1.5 5 1.5 6 0 9.3-5 9.3-9.3v-.4c.7-.5 1.3-1.1 1.7-1.8z" />
-                                        </svg>
-                                        </Link>
-                                    </li>
-                                    <li className="ml-4">
-                                        <Link to="#" className="flex justify-center items-center text-blue-900 hover:text-gray-500 bg-white hover:bg-white-100 rounded-full shadow transition duration-150 ease-in-out" aria-label="Facebook">
-                                        <svg className="w-8 h-8 fill-current" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M14.023 24L14 17h-3v-3h3v-2c0-2.7 1.672-4 4.08-4 1.153 0 2.144.086 2.433.124v2.821h-1.67c-1.31 0-1.563.623-1.563 1.536V14H21l-1 3h-2.72v7h-3.257z" />
-                                        </svg>
-                                        </Link>
-                                    </li>
-                                </ul>
-                            </div>
-                    </div>          
-
-                    </div>
-
-                    <div className="flex flex-wrap items-center md:justify-between justify-center mx-auto px-4">
-                <div className="w-full md:w-4/12 px-4 mx-auto text-center py-2">
-                    <div className="text-sm text-gray-200 font-semibold py-1">
-                    Copyright &copy; {new Date().getFullYear()}{"  "}
-                    <HashLink
-                        to="#"
-                        className=" hover:text-gray-900"
-                    >
-                        Molad e Konsult
-                    </HashLink>. All rights reserved.
-                    </div>
-                </div>
-                </div>
-
-                </div>
+        <footer className="bg-gray-900 text-gray-300 border-t border-gray-800">
+            {/* Main Footer Content */}
+            <div className="max-w-7xl mx-auto px-6 py-16 flex flex-col items-center text-center">
                 
-            </footer>
-        </>
-    )
+                {/* 1. Brand Section */}
+                <div className="mb-12">
+                    <h3 className="text-3xl md:text-4xl font-serif font-bold text-white tracking-tight mb-4">
+                        RAVID<span className="text-orange-500">FOODS</span>
+                    </h3>
+                    <p className="text-sm leading-relaxed max-w-md mx-auto text-gray-400">
+                        Leading the way in premium freeze-dried nutrition. We provide scalable, 
+                        high-quality food solutions for global brands and institutions.
+                    </p>
+                    <div className="mt-4 text-xs space-y-1 italic text-gray-500 uppercase tracking-widest">
+                        <p>Corporate Headquarters</p>
+                        <p>Industrial Zone, Phase II, Umbergaon, Gujrat, India</p>
+                    </div>
+                </div>
+
+                {/* 2. Centered Navigation Grid */}
+                <div className="flex flex-wrap justify-center gap-x-16 gap-y-10 mb-12">
+                    {/* Company Column */}
+                    <div className="min-w-[140px]">
+                        <h6 className="text-white text-sm font-bold uppercase tracking-widest mb-6 border-b border-orange-500 pb-2">Company</h6>
+                        <ul className="space-y-4 text-sm">
+                            <li><HashLink to="/#hero" className="hover:text-orange-500 transition-colors">Home</HashLink></li>
+                            <li><HashLink to="/#about" className="hover:text-orange-500 transition-colors">About Us</HashLink></li>
+                            <li><HashLink to="/#portfolio" className="hover:text-orange-500 transition-colors">Product Range</HashLink></li>
+                            <li><Link to="/contact" className="hover:text-orange-500 transition-colors">Contact</Link></li>
+                        </ul>
+                    </div>
+
+                    {/* Solutions Column */}
+                    <div className="min-w-[140px]">
+                        <h6 className="text-white text-sm font-bold uppercase tracking-widest mb-6 border-b border-orange-500 pb-2">Our Solutions</h6>
+                        <ul className="space-y-4 text-sm">
+                            <li><Link to="#" className="hover:text-orange-500 transition-colors">Freeze-Dried Fruits</Link></li>
+                            <li><Link to="#" className="hover:text-orange-500 transition-colors">Freeze-Dried Veggies</Link></li>
+                            <li><Link to="#" className="hover:text-orange-500 transition-colors">Premium Masalas</Link></li>
+                            <li><Link to="#" className="hover:text-orange-500 transition-colors">Bulk Formulations</Link></li>
+                        </ul>
+                    </div>
+                </div>
+
+                {/* 3. Social & CTA Section */}
+                <div className="flex flex-col items-center pt-8 border-t border-gray-800 w-full max-w-2xl">
+                    <h6 className="text-white text-xs font-bold uppercase tracking-widest mb-6">Connect With Us</h6>
+                    
+                    <div className="flex space-x-6 mb-8">
+                        <Link to="#" className="p-3 bg-gray-800 rounded-full hover:bg-orange-500 hover:text-white transition-all transform hover:scale-110">
+                            <svg className="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/></svg>
+                        </Link>
+                        <Link to="#" className="p-3 bg-gray-800 rounded-full hover:bg-orange-500 hover:text-white transition-all transform hover:scale-110">
+                            <svg className="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/></svg>
+                        </Link>
+                        <Link to="#" className="p-3 bg-gray-800 rounded-full hover:bg-orange-500 hover:text-white transition-all transform hover:scale-110">
+                            <svg className="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                        </Link>
+                    </div>
+
+                    <Link to="/contact" className="text-sm font-bold border-b-2 border-orange-500 text-orange-500 hover:text-white hover:border-white transition-all pb-1 uppercase tracking-tighter">
+                        Request Bulk Pricing & Catalog →
+                    </Link>
+                </div>
+            </div>
+
+            {/* Bottom Bar */}
+            <div className="bg-black py-8">
+                <div className="max-w-7xl mx-auto px-6 flex flex-col items-center text-center space-y-4">
+                    <p className="text-xs text-gray-500">
+                        Copyright &copy; {new Date().getFullYear()} Ravid Foods Limited. All rights reserved.
+                    </p>
+                    <div className="flex space-x-8 text-[10px] uppercase tracking-widest font-bold text-gray-600">
+                        <Link to="#" className="hover:text-white transition-colors">Privacy Policy</Link>
+                        <Link to="#" className="hover:text-white transition-colors">Terms of Supply</Link>
+                        <Link to="#" className="hover:text-white transition-colors">Cookie Settings</Link>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    );
 }
+
 export default Footer;

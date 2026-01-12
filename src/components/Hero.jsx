@@ -19,9 +19,7 @@ const Hero = () => {
                        
                         
                     </div>
-                    {/* <div className="max-w-7xl mx-auto">
-  <BannerCarousel />
-</div> */}
+         
 
                 </div>
             </div>
