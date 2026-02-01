@@ -113,7 +113,7 @@ const NavBar = () => {
                     </div>
 
                     {/* Mobile Menu */}
-                    <div className={`fixed transition-all duration-300 ease-in-out flex justify-center left-0 w-full h-auto rounded-b-md p-12 bg-white lg:hidden shadow-xl top-14 ${isOpen ? "translate-y-0 opacity-100" : "-translate-y-full opacity-0 pointer-events-none"}`}>
+                    <div className={`fixed transition-all font-inter duration-300 ease-in-out flex justify-center left-0 w-full h-auto rounded-b-md p-12 bg-white lg:hidden shadow-xl top-14 ${isOpen ? "translate-y-0 opacity-100" : "-translate-y-full opacity-0 pointer-events-none"}`}>
                         <div className='flex flex-col space-y-6 text-center'>
                             <NavLinks />
                         </div>                                                

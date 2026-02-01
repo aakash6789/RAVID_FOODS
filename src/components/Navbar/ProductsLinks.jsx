@@ -32,7 +32,7 @@ const ProductsMenu = () => {
       {/* Trigger */}
       <span
         className={`
-          relative text-[0.9rem] font-semibold cursor-pointer py-4
+          relative text-[0.9rem] font-semibold font-inter cursor-pointer py-4
           after:absolute after:left-0 after:-bottom-1
           after:h-[2px] after:w-0 after:bg-black
           after:transition-all after:duration-300
