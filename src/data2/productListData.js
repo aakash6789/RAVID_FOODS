@@ -47,7 +47,7 @@ const PRODUCT_CATEGORIES = [
 
   /* ---------------- POWDERS ---------------- */
   {
-    title: "Powders & Blends",
+    title: "Ready-To-Eat Powders",
     route: "/products/powders",
     type: "product",
     items: [
@@ -59,7 +59,7 @@ const PRODUCT_CATEGORIES = [
 
   /* ---------------- APPLICATIONS ---------------- */
   {
-    title: "Applications",
+    title: "Herbs",
     route: "/applications",
     type: "application",
     items: [

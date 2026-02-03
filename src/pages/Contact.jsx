@@ -344,6 +344,10 @@ const Contact = () => {
                                 <div className="flex gap-4 opacity-50">
                                     <span className="text-xs border border-white px-2 py-1 rounded">ISO 22000</span>
                                     <span className="text-xs border border-white px-2 py-1 rounded">HACCP</span>
+                                    <span className="text-xs border border-white px-2 py-1 rounded">NABL</span>
+                                    <span className="text-xs border border-white px-2 py-1 rounded">FSSAI</span>
+                                    <span className="text-xs border border-white px-2 py-1 rounded">GMP</span>
+                                    <span className="text-xs border border-white px-2 py-1 rounded">APEDA</span>
                                 </div>
                             </div>
                         </div>
