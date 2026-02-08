@@ -108,7 +108,7 @@ const NavBar = () => {
                     </button>
 
                     {/* Desktop Menu - Adjusted spacing for more links */}
-                    <div className='hidden lg:flex items-center space-x-20 xl:space-x-20 2xl:space-x-28 p-5'>
+                    <div className='hidden lg:flex items-center space-x-20 xl:space-x-16 2xl:space-x-28 p-5'>
                         <NavLinks />
                     </div>
 

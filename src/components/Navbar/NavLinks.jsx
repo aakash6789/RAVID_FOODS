@@ -30,7 +30,7 @@ const NavLinks = () => {
                 Application
             </HashLink>
 
-            <HashLink className={linkStyles} to="/blogs">
+            <HashLink className={linkStyles} to="/contact#contact">
                  Private Labels
             </HashLink>
 

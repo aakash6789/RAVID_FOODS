@@ -85,9 +85,9 @@ const Clients = () => {
                     <h2 className="mt-3 text-3xl md:text-3xl font-serif font-bold text-[#013289]">
                         Trusted by Brands
                     </h2>
-                    <div className='flex justify-center mt-4'>
+                    {/* <div className='flex justify-center mt-4'>
                         <div className='w-16 border-b-4 border-orange-500'>Trusted by Brands</div>
-                    </div>
+                    </div> */}
                     <p className="mt-6 text-gray-500 max-w-2xl mx-auto text-sm">
                         We are proud to partner with food brands, institutions, and manufacturers who prioritize quality and nutritional integrity
                     </p>
