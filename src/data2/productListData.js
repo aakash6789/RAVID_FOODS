@@ -174,24 +174,26 @@ const PRODUCT_CATEGORIES = [
       { label: "Veg Kolhapuri", slug: "freeze-dried-vegkolhapuri" },
       { label: "Pav Bhaji", slug: "freeze-dried-pavbhaji" },
       { label: "Tomato Rasam", slug: "freeze-dried-tomatorasam" },
+      { label: "Millet Kheer", slug: "freeze-dried-milletkheer" },
+      { label: "Gajar Halwa", slug: "freeze-dried-gajarhalwa" },
     ],
   },
 
   /* ---------------- DESSERTS & DAIRY ---------------- */
-  {
-    title: "Desserts & Dairy",
-    route: "/products/desserts",
-    type: "product",
-    items: [
-      { label: "Chocolate Ice Cream", slug: "freeze-dried-chocolateicecream" },
-      { label: "Mango Ice Cream", slug: "freeze-dried-mangoicecream" },
-      { label: "Raspberry Ice Cream", slug: "freeze-dried-raspberryicecream" },
-      { label: "Vanilla Ice Cream", slug: "freeze-dried-vanillaicecream" },
-      { label: "Millet Kheer", slug: "freeze-dried-milletkheer" },
-      { label: "Gajar Halwa", slug: "freeze-dried-gajarhalwa" },
-      { label: "Revdi", slug: "freeze-dried-revdi" },
-    ],
-  },
+  // {
+  //   title: "Desserts & Dairy",
+  //   route: "/products/desserts",
+  //   type: "product",
+  //   items: [
+  //     { label: "Chocolate Ice Cream", slug: "freeze-dried-chocolateicecream" },
+  //     { label: "Mango Ice Cream", slug: "freeze-dried-mangoicecream" },
+  //     { label: "Raspberry Ice Cream", slug: "freeze-dried-raspberryicecream" },
+  //     { label: "Vanilla Ice Cream", slug: "freeze-dried-vanillaicecream" },
+  //     { label: "Millet Kheer", slug: "freeze-dried-milletkheer" },
+  //     { label: "Gajar Halwa", slug: "freeze-dried-gajarhalwa" },
+  //     { label: "Revdi", slug: "freeze-dried-revdi" },
+  //   ],
+  // },
 ];
 
 export default PRODUCT_CATEGORIES;

@@ -2,8 +2,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
+import { useNavigate } from "react-router-dom";
 
 const Footer = () => {
+    const navigate = useNavigate();
     return (
         // <footer className="bg-gray-900 text-gray-300 pl-4">
         <footer className="bg-gray-900 text-gray-300">
@@ -74,12 +76,35 @@ const Footer = () => {
                     {/* 3rd block: Products */}
                     <div className="col-span-6 md:col-span-3 lg:col-span-3">
                         <h6 className="text-white text-sm font-bold uppercase tracking-widest mb-6">Our Solutions</h6>
-                        <ul className="space-y-4 text-sm text-white font-medium">
+                        {/* <ul className="space-y-4 text-sm text-white font-medium">
                             <li><Link to="#" className="hover:text-orange-500 transition-colors">Freeze-Dried Fruits</Link></li>
                             <li><Link to="#" className="hover:text-orange-500 transition-colors">Freeze-Dried Vegetables</Link></li>
                             <li><Link to="#" className="hover:text-orange-500 transition-colors">Premium Spice Masalas</Link></li>
                             <li><Link to="#" className="hover:text-orange-500 transition-colors">Custom Bulk Formulations</Link></li>
-                        </ul>
+                        </ul> */}
+                        <ul className="space-y-4 text-sm text-white font-medium">
+  <li>
+    <Link to="/products" className="hover:text-orange-500 transition-colors">
+      Freeze-Dried Fruits
+    </Link>
+  </li>
+  <li>
+    <Link to="/products" className="hover:text-orange-500 transition-colors">
+      Freeze-Dried Vegetables
+    </Link>
+  </li>
+  <li>
+    <Link to="/products" className="hover:text-orange-500 transition-colors">
+      Premium Spice Masalas
+    </Link>
+  </li>
+  <li>
+    <Link to="/products" className="hover:text-orange-500 transition-colors">
+      Custom Bulk Formulations
+    </Link>
+  </li>
+</ul>
+
                     </div>
 
                     {/* 4th block: Social & Newsletter */}

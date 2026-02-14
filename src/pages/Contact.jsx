@@ -7,6 +7,7 @@ import { useDocTitle } from '../components/CustomHook';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import Notiflix from 'notiflix';
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
     useDocTitle('Ravid Foods | Contact Our B2B Team');
@@ -24,41 +25,85 @@ const Contact = () => {
         setFirstName(''); setLastName(''); setEmail(''); setPhone(''); setMessage('');
     };
 
-    const sendEmail = (e) => {
-        e.preventDefault();
-        const btn = document.getElementById('submitBtn');
-        btn.disabled = true;
-        btn.innerHTML = 'Processing...';
+    // const sendEmail = (e) => {
+    //     e.preventDefault();
+    //     const btn = document.getElementById('submitBtn');
+    //     btn.disabled = true;
+    //     btn.innerHTML = 'Processing...';
 
-        let fData = new FormData();
-        fData.append('first_name', firstName);
-        fData.append('last_name', lastName);
-        fData.append('email', email);
-        fData.append('phone_number', phone);
-        fData.append('message', message);
+    //     let fData = new FormData();
+    //     fData.append('first_name', firstName);
+    //     fData.append('last_name', lastName);
+    //     fData.append('email', email);
+    //     fData.append('phone_number', phone);
+    //     fData.append('message', message);
 
-        axios({
-            method: "post",
-            url: process.env.REACT_APP_CONTACT_API,
-            data: fData,
-            headers: { 'Content-Type': 'multipart/form-data' }
-        })
-        .then((response) => {
-            btn.disabled = false;
-            btn.innerHTML = 'Send Message';
-            clearInput();
-            Notiflix.Report.success('Message Sent', 'Our procurement team will contact you shortly.', 'Okay');
-        })
-        .catch((error) => {
-            btn.disabled = false;
-            btn.innerHTML = 'Send Message';
-            const { response } = error;
-            if (response?.status === 500) {
-                Notiflix.Report.failure('Error', response.data.message, 'Okay');
-            }
-            if (response?.data?.errors) setErrors(response.data.errors);
-        });
+    //     axios({
+    //         method: "post",
+    //         url: process.env.REACT_APP_CONTACT_API,
+    //         data: fData,
+    //         headers: { 'Content-Type': 'multipart/form-data' }
+    //     })
+    //     .then((response) => {
+    //         btn.disabled = false;
+    //         btn.innerHTML = 'Send Message';
+    //         clearInput();
+    //         Notiflix.Report.success('Message Sent', 'Our procurement team will contact you shortly.', 'Okay');
+    //     })
+    //     .catch((error) => {
+    //         btn.disabled = false;
+    //         btn.innerHTML = 'Send Message';
+    //         const { response } = error;
+    //         if (response?.status === 500) {
+    //             Notiflix.Report.failure('Error', response.data.message, 'Okay');
+    //         }
+    //         if (response?.data?.errors) setErrors(response.data.errors);
+    //     });
+    // };
+const sendEmail = (e) => {
+    e.preventDefault();
+    const btn = document.getElementById('submitBtn');
+    btn.disabled = true;
+    btn.innerHTML = 'Processing...';
+
+    const templateParams = {
+        first_name: firstName,
+        company: lastName,
+        email: email,
+        phone: phone,
+        message: message,
     };
+// console.log(process.env.REACT_APP_EMAILJS_SERVICE_ID);
+// console.log(process.env.REACT_APP_EMAILJS_TEMPLATE_ID);
+// console.log(process.env.REACT_APP_EMAILJS_PUBLIC_KEY);
+
+    emailjs.send(
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+            import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+            templateParams,
+            import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+    )
+    .then(() => {
+        btn.disabled = false;
+        btn.innerHTML = 'Send Inquiry';
+        clearInput();
+        Notiflix.Report.success(
+            'Message Sent',
+            'Our procurement team will contact you shortly.',
+            'Okay'
+        );
+    })
+    .catch((error) => {
+        btn.disabled = false;
+        btn.innerHTML = 'Send Inquiry';
+        Notiflix.Report.failure(
+            'Error',
+            'Failed to send message. Please try again.',
+            'Okay'
+        );
+        console.error(error);
+    });
+};
 
     return (
         <>

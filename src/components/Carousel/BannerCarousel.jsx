@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import mangoPowder from '../../images/clients/mangoPowder(1).png'
 import bananaPowder from '../../images/clients/bananaPowder.jfif'
 import chikuPowder from '../../images/clients/chikuPowder.jfif'
+import { useNavigate } from "react-router-dom";
 const images = [
   mangoPowder,
  bananaPowder,
@@ -13,7 +14,7 @@ const images = [
 
 export default function BannerCarousel() {
   const [active, setActive] = useState(0);
-
+ const navigate = useNavigate();
   useEffect(() => {
     const interval = setInterval(() => {
       setActive((prev) => (prev + 1) % images.length);
@@ -66,11 +67,11 @@ export default function BannerCarousel() {
 
     {/* Added 'justify-end' to keep buttons on the right */}
     <div className="flex flex-wrap text-sm gap-4 justify-end">
-      <button className="px-6 py-4 bg-yellow-500 hover:bg-yellow-600 text-black font-bold rounded-lg transition-all transform hover:-translate-y-1 shadow-lg">
+      <button  onClick={() => navigate("/contact")} className="px-6 py-4 bg-yellow-500 hover:bg-yellow-600 text-black font-bold rounded-lg transition-all transform hover:-translate-y-1 shadow-lg">
         Get Free Samples
       </button>
 
-      <button className="px-6 py-4 bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/30 text-white font-bold rounded-lg transition-all">
+      <button  onClick={() => navigate("/contact")} className="px-6 py-4 bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/30 text-white font-bold rounded-lg transition-all">
         Bulk Catalog
       </button>
     </div>
