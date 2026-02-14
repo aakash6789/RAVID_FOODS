@@ -1,5 +1,5 @@
 export default {
-  "name": "RedCapsicum",
+  "name": "Red Capsicum",
   "slug": "freeze-dried-redcapsicum",
   "categories": [
     "Flakes",
@@ -74,7 +74,7 @@ export default {
         "Packaging Material": "BOPP Pouch (Food Grade)",
         "HSN Code": "07129090"
       },
-      "images": [],
+      "images": ["CapsicumRed-pow-pdt1","CapsicumRed-pow-pdt2"],
       "manufacturingProcess": [
         "Process:",
         "Raw Material Selection",

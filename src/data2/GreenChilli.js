@@ -51,7 +51,7 @@ export default {
         "Packaging Material": "BOPP Pouch (Food Grade)",
         "HSN Code": "09042090"
       },
-      "images": [],
+      "images": ["GreenChilli-Pow-pdt1","GreenChilli-Pow-pdt2"],
       "manufacturingProcess": [
         "Process",
         "Raw Material Selection",

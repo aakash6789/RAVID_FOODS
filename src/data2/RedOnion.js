@@ -1,5 +1,5 @@
 export default {
-  "name": "RedOnion",
+  "name": "Red Onion",
   "slug": "freeze-dried-redonion",
   "categories": [
     "Flakes",
@@ -154,7 +154,7 @@ export default {
         "Packaging Material": "BOPP Pouch (Food Grade)",
         "HSN Code": "07129020"
       },
-      "images": [],
+      "images": ["OnionRed-Flakes-pdt1","OnionRed-Flakes-pdt2"],
       "manufacturingProcess": [
         "Process",
         "Raw Material Selection",

@@ -69,7 +69,7 @@ export default {
         "Packaging Material": "BOPP Pouch (Food Grade)",
         "HSN Code": "07129090"
       },
-      "images": [],
+      "images": ["CabbageGreen-pow-pdt1"," CabbageGreen-pow-pdt2 "],
       "manufacturingProcess": [
         "Process",
         "Raw Material Selection",
@@ -156,7 +156,7 @@ export default {
         "Packaging Material": "BOPP Pouch (Food Grade)",
         "HSN Code": "07129090"
       },
-      "images": [],
+      "images": ["CabbageGreen-pow-pdt1"," CabbageGreen-pow-pdt2 "],
       "manufacturingProcess": [
         "Process",
         "Raw Material Selection",

@@ -51,7 +51,7 @@ export default {
         "Packaging Material": "BOPP Pouch (Food Grade)",
         "HSN Code": "08134010"
       },
-      "images": [],
+      "images": ["RawMango-Pow-pdt1"," RawMango-Pow-pdt2 "],
       "manufacturingProcess": [
         "Process",
         "Raw Material Selection",

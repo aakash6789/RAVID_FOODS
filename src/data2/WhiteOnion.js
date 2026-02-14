@@ -74,7 +74,7 @@ export default {
         "Packaging Material": "BOPP Pouch (Food Grade)",
         "HSN Code": "07129020"
       },
-      "images": [],
+      "images": ["OnionWhite-pow-pdt1","OnionWhite-pow-pdt2"],
       "manufacturingProcess": [
         "Process",
         "Raw Material Selection",
