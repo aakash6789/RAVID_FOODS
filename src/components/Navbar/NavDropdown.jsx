@@ -137,24 +137,22 @@ const NavDropdown = ({ title, data, baseUrl }) => {
       `}>
         <div className="max-w-7xl mx-auto px-10 py-12">
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-8 gap-y-10">
-            {data.map((cat, idx) => (
-              <div key={idx} className="group">
-                {/* CATEGORY TITLE - NOW CLICKABLE */}
-                <NavLink
-                  to={`${baseUrl}/${cat.slug}`}
-                  onClick={() => setOpen(false)}
-                  className="inline-block text-[13px] font-bold text-gray-900 mb-4 uppercase tracking-wider border-l-2 border-orange-500 pl-3 hover:text-orange-600 transition-colors"
-                >
-                  {cat.title}
-                </NavLink>
-
-                {/* SUB-ITEMS (Used by Products) */}
-                {cat.items && cat.items.length > 0 && (
+            {data.map((cat, idx) => {
+                            const itemsToShow = 8;
+              const hasMore = cat.items && cat.items.length > itemsToShow;
+              const visibleItems = cat.items ? cat.items.slice(0, itemsToShow) : [];
+//               // ---------------------------
+  return (
+                <div key={idx} className="group">
+                  <h4 className="text-[13px] font-bold text-gray-900 mb-4 uppercase tracking-wider border-l-2 border-orange-500 pl-3 group-hover:text-black transition-colors">
+                    {cat.title}
+                  </h4>
+                  
                   <ul className="space-y-2 pl-3">
-                    {cat.items.slice(0, 8).map((item) => (
+                    {visibleItems.map((item) => (
                       <li key={item.slug}>
                         <NavLink
-                          to={`/products/${item.slug}`}
+                          to={`${baseUrl}/${item.slug}`}
                           className="text-sm text-gray-600 hover:text-orange-600 transition"
                           onClick={() => setOpen(false)}
                         >
@@ -162,10 +160,23 @@ const NavDropdown = ({ title, data, baseUrl }) => {
                         </NavLink>
                       </li>
                     ))}
+                    
+                    {/* View More Link */}
+                    {hasMore && (
+                      <li className="pt-1">
+                        <NavLink
+                          to={baseUrl}
+                          className="text-sm font-bold text-orange-600 hover:text-orange-700 transition flex items-center gap-1"
+                          onClick={() => setOpen(false)}
+                        >
+                          View More <span className="text-lg">→</span>
+                        </NavLink>
+                      </li>
+                    )}
                   </ul>
-                )}
-              </div>
-            ))}
+                </div>
+              );
+})}
           </div>
         </div>
       </div>

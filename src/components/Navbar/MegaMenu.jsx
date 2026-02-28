@@ -52,7 +52,7 @@ const MegaMenu = ({ title, categories, viewAllPath }) => {
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
               {categories.map((cat) => {
                 const visibleItems = cat.items.slice(0, 10);
-                const hasMore = cat.items.length > 10;
+                const hasMore = cat.items.length > 7;
 
                 return (
                   <div key={cat.title}>

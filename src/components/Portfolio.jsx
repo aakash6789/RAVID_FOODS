@@ -92,10 +92,10 @@ const Portfolio = () => {
                                 </div>
 
                                 <Link 
-                                    to="/contact" 
+                                    to="/products" 
                                     className="block text-sm text-center py-3 px-0 bg-gray-900 text-white font-bold rounded-lg hover:bg-orange-500 transition-colors duration-300"
                                 >
-                                    View Specifications
+                                    View more
                                 </Link>
                             </div>
                         </div>
