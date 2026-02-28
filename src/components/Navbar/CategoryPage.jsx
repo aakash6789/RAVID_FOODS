@@ -1,90 +1,16 @@
 
 
-// import React, { useEffect } from 'react';
-// import { useParams } from 'react-router-dom';
-// import { CATEGORY_CONTENT } from './CategoryContent';
-// import Navbar from './Navbar'; // Your existing Navbar
-
-// const CategoryPage = () => {
-//     const { slug } = useParams();
-//     const data = CATEGORY_CONTENT[slug];
-
-//     useEffect(() => {
-//         window.scrollTo(0, 0);
-//     }, [slug]);
-
-//     if (!data) return <div className="pt-40 text-center">Category not found.</div>;
-
-//     return (
-//         <div className="min-h-screen bg-white">
-//             <Navbar />
-//             <main className="pt-24 pb-16 lg:pt-32 lg:pb-24">
-//                 <div className="max-w-7xl mx-auto px-6 lg:px-12">
-//                     <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
-                        
-//                         {/* Image Column */}
-//                         <div className="w-full lg:w-1/2 flex justify-center order-1 lg:order-none" data-aos="fade-right">
-//                             <div className="relative w-full max-w-md">
-//                                 <div className="absolute -top-6 -left-6 w-32 h-32 bg-orange-50 rounded-full z-0 hidden lg:block" />
-//                                 <img 
-//                                     src={`/images/categories/${slug}.jpg`} // Name your images matching the slug
-//                                     alt={data.title}
-//                                     className="relative z-10 w-full h-auto rounded-2xl shadow-xl hover:scale-105 transition-transform duration-500" 
-//                                 />
-//                                 <div className="absolute -bottom-6 -right-6 w-24 h-24 bg-gray-50 rounded-full z-0" />
-//                             </div>
-//                         </div>
-
-//                         {/* Text Column */}
-                        // <div className="w-full lg:w-1/2 text-center lg:text-left" data-aos="fade-left">
-                        //     <span className="text-orange-600 font-bold tracking-[0.2em] uppercase text-xs sm:text-sm">
-                        //         {data.tagline}
-                        //     </span>
-                            
-                        //     <h1 className="mt-4 text-2xl md:text-2xl lg:text-4xl font-serif font-bold text-gray-900 leading-tight">
-                        //         {data.title}
-                        //     </h1>
-                            
-                        //     <div className="mt-8 space-y-6">
-                        //         <p className='text-md text-gray-800 font-semibold leading-relaxed'>
-                        //             {data.description}
-                        //         </p>
-
-                        //         <p className='text-base text-gray-700 leading-relaxed'>
-                        //             {data.details}
-                        //         </p>
-
-                        //         <div className="bg-gray-50 p-6 rounded-xl border-l-4 border-orange-500">
-                        //             <p className='text-sm text-gray-700 italic font-medium'>
-                        //                 "{data.closing}"
-                        //             </p>
-                        //         </div>
-                        //     </div>
-
-                        //     <div className="mt-10">
-                        //         <button className="px-10 py-4 text-white bg-orange-500 hover:bg-orange-600 font-bold rounded-full shadow-lg transition-all group">
-                        //             Inquire for {data.title}
-                        //         </button>
-                        //     </div>
-                        // </div>
-//                  </div>
-//                 </div>
-//             </main>
-//         </div>
-//     );
-// }
-
-// export default CategoryPage;
-
 import React, { useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { CATEGORY_CONTENT } from './CategoryContent';
+import { useNavigate } from 'react-router-dom';
 import NavBar from './NavBar';
 import Footer from '../Footer';
 import AOS from 'aos';
 
 const CategoryPage = () => {
     const { slug } = useParams();
+    const navigate=useNavigate();
     const data = CATEGORY_CONTENT[slug];
 
     useEffect(() => {
@@ -194,7 +120,7 @@ const CategoryPage = () => {
                             </div>
 
                             <div className="mt-10">
-                                <button className="px-10 py-4 text-white bg-orange-500 hover:bg-orange-600 font-bold rounded-full shadow-lg transition-all group">
+                                <button onClick={() => navigate("/contact")} className="px-10 py-4 text-sm text-white bg-orange-500 hover:bg-orange-600 font-bold rounded-full shadow-lg transition-all group">
                                     Inquire for {data.title}
                                 </button>
                             </div>
