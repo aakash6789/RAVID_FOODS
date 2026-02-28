@@ -1,27 +1,11 @@
-import ThumbBakery from '../../../public/images/clients/Thumb-Bakery.png'
-// import ThumbBakery from '../../../public/images/clients/Baby-Food-Nutraceuticals.png'
-// import ThumbBakery from '../../../public/images/clients/Dairy-Products-Alternatives.png'
-// import ThumbBakery from '../../../public/images/clients/Curries-Gravies.png'
-// import ThumbBakery from '../../../public/images/clients/Healthy-Drinks.png'
-// import ThumbBakery from '../../../public/images/clients/Snacks.png'
-// import ThumbBakery from '../../../public/images/clients/Soups-Seasonings-Savories.png'
-// import ThumbBakery from '../../../public/images/clients/Condiment.png'
-// import ThumbBakery from '../../../public/images/clients/Thumb-Confectionary.png'
-// import ThumbBakery from '../../../public/images/clients/Thumb-Cosmetics.png'
-// import ThumbBakery from '../../../public/images/clients/Thumb-Dairy-Ice Cream-Processed Foods.png'
-// import ThumbBakery from '../../../public/images/clients/Thumb-Ready To Eat food.png'
-// import ThumbBakery from '../../../public/images/clients/Thumb-HoReCa.png'
-// import ThumbBakery from '../../../public/images/clients/Thumb-HoReCa.png'
-// import ThumbBakery from '../../../public/images/clients/Thumb-Human Nutrition-Nutraceuticals.png'
-// import ThumbBakery from '../../../public/images/clients/Thumb-FMCG-Beverage.png'
-
 
 
 export const CATEGORY_CONTENT = {
     // --- APPLICATIONS ---
     "dairy-products-alternatives": {
         title: "Dairy Products & Alternatives",
-        image:'../../../public/images/clients/Dairy-Products-Alternatives.png',
+        // image:'../../../public/images/clients/Dairy-Products-Alternatives.png',
+        image: '/images/clients/Dairy-Products-Alternatives.png', 
         tagline: "Sensory Performance & Stability",
         description: "Freeze-dried ingredients provide high-intensity flavor, color, and nutrient retention for dairy and dairy-alternative products, making them ideal for ice creams, yogurts, milk beverages, vegan yogurts, and plant-based frozen desserts.",
         details: "Their ultra-low moisture content ensures excellent stability, prevents microbial growth, and maintains the crisp integrity of fruit pieces even after freezing or high-shear processing. They offer superior solubility and dispersion, allowing seamless integration into milk-fat and plant-protein matrices.",
