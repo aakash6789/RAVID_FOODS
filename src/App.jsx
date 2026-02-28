@@ -17,6 +17,7 @@ import ProductPage from './pages/ProductPage.jsx';
 import AllProducts from './pages/AllProducts.jsx';
 import Blogs from './pages/Blogs.jsx';
 import ScrollToTop from './helper/ScrollToTop.js';
+import CategoryPage from './components/Navbar/CategoryPage.jsx';
 function App() {
   useEffect(() => {
     const aos_init = () => {
@@ -40,6 +41,8 @@ function App() {
         <ScrollToTop/>
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/applications/:slug" element={<CategoryPage />} />
+            <Route path="/industry/:slug" element={<CategoryPage />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/products/:slug" element={<ProductPage/>} />
             <Route path="/products" element={<AllProducts />} />
