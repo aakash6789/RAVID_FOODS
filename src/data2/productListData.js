@@ -79,6 +79,7 @@ const PRODUCT_CATEGORIES = [
   {
     title: "Freeze-Dried Fruits",
     route: "/products/freeze-dried-fruits",
+    slug:'',
     type: "product",
     items: [
       { label: "Apple", slug: "freeze-dried-apple" },
@@ -107,6 +108,7 @@ const PRODUCT_CATEGORIES = [
   {
     title: "Freeze-Dried Vegetables",
     route: "/products/freeze-dried-vegetables",
+    slug:'',
     type: "product",
     items: [
       { label: "Baby Corn", slug: "freeze-dried-babycorn" },
@@ -136,6 +138,7 @@ const PRODUCT_CATEGORIES = [
   {
     title: "Herbs & Leaves",
     route: "/products/herbs",
+    slug:'',
     type: "product",
     items: [
       { label: "Coriander Leaves", slug: "freeze-dried-corianderleaves" },
@@ -156,6 +159,7 @@ const PRODUCT_CATEGORIES = [
   {
     title: "Ready-To-Eat Meals",
     route: "/products/ready-meals",
+    slug:'',
     type: "product",
     items: [
       { label: "Bisi Bele Bhaat", slug: "freeze-dried-bisibelebhaat" },
