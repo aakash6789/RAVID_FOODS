@@ -158,7 +158,7 @@ const NavLinks = () => {
                 />
             </div>
 
-            <HashLink className={linkStyles} to="/private-labels">Private Labels</HashLink>
+            <HashLink className={linkStyles} to="/contact#contact">Private Labels</HashLink>
             <HashLink className={linkStyles} to="/contact#contact">Contact Us</HashLink>
         </>
     )
