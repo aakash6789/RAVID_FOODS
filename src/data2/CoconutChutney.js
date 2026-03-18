@@ -1,12 +1,12 @@
 export default {
-  "name": "CoconutChutney",
+  "name": "Coconut Chutney",
   "slug": "freeze-dried-coconutchutney",
   "categories": [
     "Readytoeat"
   ],
   "data": [
     {
-      "type": "Readytoeat",
+      "type": "Ready-to-eat",
       "fullName": "Coconut Chutney",
       "description": "Coconut Chutney\n\nA classic South Indian accompaniment, Coconut–Green Chilli Chutney is a refreshing, mildly spiced dip made with fresh grated coconut, green chilies, ginger, and tempered spices. Using freeze-drying technology, this chutney is preserved to maintain its authentic taste, creamy texture, aroma, and nutrition, while offering long shelf life and instant convenience.",
       "specifications": {

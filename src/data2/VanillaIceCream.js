@@ -1,5 +1,5 @@
 export default {
-  "name": "Vanilla IceCream",
+  "name": "Vanilla Ice-Cream",
   "slug": "freeze-dried-vanillaicecream",
   "categories": [
     "Readytoeat"
@@ -51,7 +51,7 @@ export default {
         "HSN Code": "2106 90 99",
         "Country of Origin": "Bharat (India)"
       },
-      "images": [],
+      "images": ["VanillaIceCream-Desserts-pdt1","VanillaIceCream-Desserts-pdt2"],
       "manufacturingProcess": [
         "Process",
         "Raw Material Selection",

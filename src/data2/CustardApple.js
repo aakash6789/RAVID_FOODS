@@ -79,38 +79,7 @@ export default {
         "Bulk Density": "0.40 – 0.60 g/ml"
       },
       "applications": [
-        {
-          "name": "Specifications",
-          "description": ""
-        },
-        {
-          "name": "Botanical name: Annona squamosa",
-          "description": ""
-        },
-        {
-          "name": "Appearance: Free",
-          "description": "flowing, fine powder, Creamy white to light beige in color"
-        },
-        {
-          "name": "Colour: Creamy white to pale ivory",
-          "description": ""
-        },
-        {
-          "name": "Flavor & Aroma: Characteristic sweet, creamy flavor of natural custard apple Free from off",
-          "description": "flavors or odors"
-        },
-        {
-          "name": "Moisture Content: ≤ 5%",
-          "description": ""
-        },
-        {
-          "name": "Particle Size: 80",
-          "description": "120 mesh (customizable)"
-        },
-        {
-          "name": "Bulk Density: 0.40",
-          "description": "0.60 g/ml"
-        },
+       
         {
           "name": "Beverages",
           "description": "Instant shakes, smoothies, juices, cocktails, flavored milk, and health drinks."

@@ -6,7 +6,7 @@ export default {
   ],
   "data": [
     {
-      "type": "Readytoeat",
+      "type": "Ready-to-eat",
       "fullName": "Chocolate Ice Cream",
       "description": "Chocolate Ice Cream\n\nIndulge in the rich, velvety taste of chocolate ice cream in a fun, crunchy, no-melt form with Freeze-Dried Chocolate Ice Cream. Made from real chocolate ice cream and preserved using advanced freeze-drying technology, this treat retains its authentic creamy flavor, natural aroma, and nutrition, while offering a crisp texture and long shelf life — without the need for refrigeration.",
       "specifications": {
@@ -55,7 +55,7 @@ export default {
         "HSN Code": "2106 90 99",
         "Country of Origin": "Bharat (India)"
       },
-      "images": [],
+      "images": ["ChocolateIceCream-Desserts-pdt1","ChocolateIceCream-Desserts-pdt2"],
       "manufacturingProcess": [
         "Process",
         "Raw Material Selection",

@@ -55,6 +55,7 @@ const ProductDetails = ({ product }) => {
           <Swiper
             key={activeTabIndex} // Force refresh on tab change
             modules={[Autoplay, Pagination]}
+            lazy={true}
             pagination={{ clickable: true }}
             autoplay={{ delay: 3500, disableOnInteraction: false }}
             loop
@@ -66,6 +67,8 @@ const ProductDetails = ({ product }) => {
                   <img
                     src={`/images/clients/${img}.webp`} 
                     alt={activeData.fullName}
+                    loading="lazy"
+                    decoding="async"
                     className="w-full h-full object-cover"
                     // Optional: Error handling if .png doesn't exist
                     onError={(e) => { e.target.src = "/images/placeholder.jpg"; }} 

@@ -1,5 +1,5 @@
 export default {
-  "name": "DalKhichdi",
+  "name": "Dal Khichdi",
   "slug": "freeze-dried-dalkhichdi",
   "categories": [
     "Readytoeat"

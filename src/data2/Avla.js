@@ -72,13 +72,7 @@ export default {
         "amla-pow-pdt2"
       ],
       "manufacturingProcess": [
-        "– Used in premixes, beverage bases, and fortified food preparations.",
-        "More Info",
-        "Pkg Size: 2kgs & 5 kgs",
-        "Shelf Life: 12 months (in sealed, moisture-proof packaging)",
-        "Packaging Material: BOPP Pouch (Food Grade)",
-        "HSN Code: 08134090",
-        "Manufacturing Process",
+      
         "Raw Material Selection",
         "Washing & Cleaning",
         "De-seeding & Cutting",

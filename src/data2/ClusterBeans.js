@@ -1,5 +1,5 @@
 export default {
-  "name": "ClusterBeans",
+  "name": "Cluster Beans",
   "slug": "freeze-dried-clusterbeans",
   "categories": [
     "Pieces"

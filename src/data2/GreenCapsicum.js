@@ -1,5 +1,5 @@
 export default {
-  "name": "GreenCapsicum",
+  "name": "Green Capsicum",
   "slug": "freeze-dried-greencapsicum",
   "categories": [
     "Flakes",
@@ -74,7 +74,7 @@ export default {
         "Packaging Material": "BOPP Pouch (Food Grade)",
         "HSN Code": "07129090"
       },
-      "images": [],
+      "images": ['CapsucumGreen-Flakes-pdt1','CapsucumGreen-Flakes-pdt2'],
       "manufacturingProcess": [
         "Process:",
         "Raw Material Selection",
@@ -155,7 +155,7 @@ export default {
         "Packaging Material": "BOPP Pouch (Food Grade)",
         "HSN Code": "07129090"
       },
-      "images": [],
+      "images": ['CapsicumGreen-pow-pdt1','CapsicumGreen-pow-pdt2'],
       "manufacturingProcess": [
         "Process",
         "Raw Material Selection",

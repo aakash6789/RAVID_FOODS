@@ -1,5 +1,5 @@
 export default {
-  "name": "BisiBeleBhaat",
+  "name": "Bisi Bele Bhaat",
   "slug": "freeze-dried-bisibelebhaat",
   "categories": [
     "Readytoeat"

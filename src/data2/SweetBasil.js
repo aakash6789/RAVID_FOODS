@@ -19,38 +19,7 @@ export default {
         "Bulk Density": "0.25 – 0.45 g/ml"
       },
       "applications": [
-        {
-          "name": "Specifications",
-          "description": ""
-        },
-        {
-          "name": "Botanical Name: Ocimum basilicum",
-          "description": ""
-        },
-        {
-          "name": "Appearance: Whole leaves or fine powder, depending on product form",
-          "description": ""
-        },
-        {
-          "name": "Colour: Bright green (powder or flakes)",
-          "description": ""
-        },
-        {
-          "name": "Aroma: Characteristic fresh basil aroma",
-          "description": ""
-        },
-        {
-          "name": "Taste: Fresh, aromatic, slightly sweet",
-          "description": ""
-        },
-        {
-          "name": "Moisture Content: ≤ 5 %",
-          "description": ""
-        },
-        {
-          "name": "Bulk Density: 0.25",
-          "description": "0.45 g/ml"
-        },
+       
         {
           "name": "Soups, Sauces & Gravies",
           "description": "Adds aromatic, fresh basil flavor when rehydrated."

@@ -1,5 +1,5 @@
 export default {
-  "name": "Mango Ice Cream",
+  "name": "Mango Ice-Cream",
   "slug": "freeze-dried-mangoicecream",
   "categories": [
     "Readytoeat"
@@ -52,7 +52,7 @@ export default {
         "HSN Code": "2106 90 99",
         "Country of Origin": "Bharat (India)"
       },
-      "images": [],
+      "images": ["MangoIceCream-Desserts-pdt1","MangoIceCream-Desserts-pdt2"],
       "manufacturingProcess": [
         "Process",
         "Raw Material Selection",

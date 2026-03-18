@@ -1,5 +1,5 @@
 export default {
-  "name": "Raspberry IceCream",
+  "name": "Raspberry Ice-Cream",
   "slug": "freeze-dried-raspberryicecream",
   "categories": [
     "Readytoeat"
@@ -48,7 +48,7 @@ export default {
         "HSN Code": "2106 90 99",
         "Country of Origin": "Bharat (India)"
       },
-      "images": [],
+      "images": ["RaspberryIceCream-Desserts-pdt1","RaspberryIceCream-Desserts-pdt2"],
       "manufacturingProcess": [
         "Process",
         "Raw Material Selection",

@@ -36,12 +36,18 @@ export default function BannerCarousel() {
       active === index ? "opacity-100 scale-105" : "opacity-0 scale-100"
     } transition-transform duration-[6000ms]`}
   >
-    <img
+    {/* <img
       src={img}
       alt="Freeze dried ingredients"
       className="w-full h-full object-cover" 
-    />
-
+    /> */}
+<img
+  src={img}
+  alt="Freeze dried ingredients"
+  loading={index === 0 ? "eager" : "lazy"}
+  decoding="async"
+  className="w-full h-full object-cover"
+/>
   </div>
 ))}
 

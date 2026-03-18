@@ -1,5 +1,5 @@
 export default {
-  "name": "ChanaMasala",
+  "name": "Chana Masala",
   "slug": "freeze-dried-chanamasala",
   "categories": [
     "Readytoeat"

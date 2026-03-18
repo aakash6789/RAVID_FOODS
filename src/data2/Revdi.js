@@ -56,8 +56,8 @@ export default {
         "Country of Origin": "Bharat (India)"
       },
       "images": [
-        "Revdi-bhog-pdt1",
-        "Revdi-bhog-pdt2"
+        "Revdi-Desserts-pdt1",
+        "Revdi-Desserts-pdt2"
       ],
       "manufacturingProcess": [
         "Process",

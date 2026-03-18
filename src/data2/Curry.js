@@ -50,7 +50,7 @@ export default {
         "Packaging Material": "BOPP Pouch (Food Grade)",
         "HSN Code": "07129090"
       },
-      "images": ["Curry-Leaves-pdt1",  "Curry-Leaves-pdt2.png"],
+      "images": ["Curry-Leaves-pdt1",  "Curry-Leaves-pdt2"],
       "manufacturingProcess": [
         "Process",
         "Raw Material Selection",

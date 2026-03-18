@@ -1,5 +1,5 @@
 export default {
-  "name": "GajarHalwa",
+  "name": "Gajar Halwa",
   "slug": "freeze-dried-gajarhalwa",
   "categories": [
     "Readytoeat"
