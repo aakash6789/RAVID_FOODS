@@ -136,7 +136,7 @@ const AllProducts = () => {
                                         {cat.items.map((item) => {
                                             // DYNAMIC PATH RESOLUTION
                                             // If images are in public/images/clients/
-                                            const imageSrc = `/images/clients/${item.image}.png`;
+                                            const imageSrc = `/images/clients/${item.image}.webp`;
 
                                             return (
                                                 <NavLink

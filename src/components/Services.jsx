@@ -1,13 +1,5 @@
 import React from 'react';
-import img from '../images/web.svg'; 
-import img2 from '../images/app.svg';
-import img3 from '../images/hosting.svg';
-import img4 from '../images/consultation.svg';
-import foodScientist from '../images/clients/food_scientist.jfif'
-import licensedFoodPartner from '../images/clients/licensed_foodPartner.jpg'
-import tested_products from '../images/clients/tested_products.jpg'
-import tested_fruits from '../images/clients/dried_fruits.png'
-import tested_vegetables from '../images/clients/dried_vegetables.png'
+
 const Services = () => {
 
     return (

@@ -64,7 +64,7 @@ const ProductDetails = ({ product }) => {
               <SwiperSlide key={index}>
                 <div className="aspect-square w-full">
                   <img
-                    src={`/images/clients/${img}.png`} 
+                    src={`/images/clients/${img}.webp`} 
                     alt={activeData.fullName}
                     className="w-full h-full object-cover"
                     // Optional: Error handling if .png doesn't exist

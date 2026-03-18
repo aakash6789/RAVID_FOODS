@@ -1,10 +1,11 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
-import FreezeDriedVegetables from '../images/clients/CabbageGreen-pow-pdt1.png'
-import FreezeDriedFruit from '../images/clients/banana-pow-pdt1.png'
-import FreezeDriedHerbs from '../images/clients/Curry-Leaves-pdt1.png'
-import RTE from '../images/clients/Curries & Gravies.png'
+import FreezeDriedVegetables from '../images/clients/CabbageGreen-pow-pdt1.webp'
+import FreezeDriedFruit from '../images/clients/banana-pow-pdt1.webp'
+import FreezeDriedHerbs from '../images/clients/Curry-Leaves-pdt1.webp'
+// import FreezeDriedHerbrs from '../images/clients/Curry'
+import RTE from '../images/clients/Curries-Gravies.webp'
 const products = [
     {
         id: 1,

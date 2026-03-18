@@ -2,9 +2,8 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
-import freezeDrying from '../images/clients/Picture1.png';
-import freezeDrying1 from '../images/clients/Picture2.png';
-import freezeDrying2 from '../images/clients/Freeze-dried-final.png';
+
+import freezeDrying2 from '../images/clients/Freeze-dried-final.webp';
 
 const Intro = () => {
     return (

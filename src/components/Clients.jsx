@@ -47,23 +47,24 @@
 
 import React from 'react';
 // Keep your imports as they are
-import kws from '../images/clients/kws.png';
-import geps from '../images/clients/geps.png';
-import protergia from '../images/clients/protergia.png';
-import license1 from '../images/clients/GMP.jpeg';
-import license2 from '../images/clients/NABL-Acredited.jpg';
-import license3 from '../images/clients/Haccp.jpeg';
-import license4 from '../images/clients/ISO 9000 2015.jpg';
+// import kws from '../images/clients/kws.png';
+// import geps from '../images/clients/geps.png';
+// import protergia from '../images/clients/protergia.png';
+import license1 from '../images/clients/GMP.webp';
+import license2 from '../images/clients/NABL-Acredited.webp';
+import license3 from '../images/clients/Haccp.webp';
+import license4 from '../images/clients/ISO 9000 2015.webp';
 import license5 from '../images/clients/fssai.jfif';
 import license6 from '../images/clients/apeda.jfif';
+// import license7 from '../images/clients/a';
 
 const Clients = () => {
     // Array of clients for cleaner mapping
-    const clientLogos = [
-        { img: kws, name: "KWS" },
-        { img: protergia, name: "Protergia" },
-        { img: geps, name: "GEPS" },
-    ];
+    // const clientLogos = [
+    //     { img: kws, name: "KWS" },
+    //     { img: protergia, name: "Protergia" },
+    //     { img: geps, name: "GEPS" },
+    // ];
     const clientLogos1 = [
         { img: license1, name: "KWS" },
         { img: license2, name: "Protergia" },

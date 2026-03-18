@@ -1,8 +1,11 @@
 
 import { useEffect, useState } from "react";
-import mangoPowder from '../../images/clients/mangoPowder(1).png'
+import mangoPowder from '../../images/clients/mangoPowder.jfif'
 import bananaPowder from '../../images/clients/bananaPowder.jfif'
 import chikuPowder from '../../images/clients/chikuPowder.jfif'
+// import bfrt from '../../images'
+// import chikuPowder1 from '../../images/clients/chiku'
+
 import { useNavigate } from "react-router-dom";
 const images = [
   mangoPowder,
