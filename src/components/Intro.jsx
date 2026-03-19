@@ -69,15 +69,40 @@ const Intro = () => {
                             </p>
                         </div>
 
-                        <div className="mt-10">
+                        {/* <div className="mt-10">
                             <Link to="/contact" className="inline-flex text-md items-center justify-center px-8 py-4 text-white bg-orange-500 hover:bg-orange-600 font-bold rounded-lg shadow-lg hover:shadow-orange-200/50 transition-all group">
                                 Start Your Partnership
                                 <svg className="w-5 h-5 ml-2 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
                                 </svg>
                             </Link>
+                        </div> */}
+                        {/* Action Buttons */}
+                        <div className="mt-10 flex flex-wrap justify-center lg:justify-start gap-4">
+                            {/* Primary CTA */}
+                            <Link 
+                                to="/contact" 
+                                className="inline-flex items-center text-sm justify-center px-8 py-4 text-white bg-orange-500 hover:bg-orange-600 font-bold rounded-full shadow-lg hover:shadow-orange-200/50 transition-all group"
+                            >
+                                Start Your Partnership
+                                <svg className="w-5 h-5 ml-2 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                                </svg>
+                            </Link>
+
+                            {/* Secondary CTA - Redirects to about-more */}
+                            <Link 
+                                to="/about-more" 
+                                className="inline-flex items-center text-sm justify-center px-8 py-4 text-orange-600 bg-white border-2 border-orange-500 hover:bg-orange-500 hover:text-white font-bold rounded-full transition-all duration-300 group shadow-sm hover:shadow-md"
+                            >
+                                Know More
+                                <svg className="w-5 h-5 ml-2 transform group-hover:rotate-45 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                                </svg>
+                            </Link>
                         </div>
-                    </div>
+                    </div> {/* End of Text Column */}
+                    
 
                 </div>
             </div>

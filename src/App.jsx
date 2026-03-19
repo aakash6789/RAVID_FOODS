@@ -18,6 +18,7 @@ import AllProducts from './pages/AllProducts.jsx';
 import Blogs from './pages/Blogs.jsx';
 import ScrollToTop from './helper/ScrollToTop.js';
 import CategoryPage from './components/Navbar/CategoryPage.jsx';
+import MoreInfo from './components/MoreInfo.jsx';
 function App() {
   useEffect(() => {
     const aos_init = () => {
@@ -44,6 +45,7 @@ function App() {
             <Route path="/applications/:slug" element={<CategoryPage />} />
             <Route path="/industry/:slug" element={<CategoryPage />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/about-more" element={<MoreInfo/>} />
             <Route path="/products/:slug" element={<ProductPage/>} />
             <Route path="/products" element={<AllProducts />} />
             <Route path="/blogs" element={<Blogs/>} />
