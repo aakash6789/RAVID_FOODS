@@ -1,39 +1,39 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
-import FreezeDriedVegetables from '../images/clients/CabbageGreen-pow-pdt1.webp'
-import FreezeDriedFruit from '../images/clients/banana-pow-pdt1.webp'
-import FreezeDriedHerbs from '../images/clients/Curry-Leaves-pdt1.webp'
+import FreezeDriedVegetables from '../../public/images/clients/CabbageGreen-pow-pdt1.webp'
+import FreezeDriedFruit from '../../public/images/clients/banana-pow-pdt1.webp'
+import FreezeDriedHerbs from '../../public/images/clients/Curry-Leaves-pdt1.webp'
 // import FreezeDriedHerbrs from '../images/clients/Curry'
-import RTE from '../images/clients/Curries-Gravies.webp'
+import RTE from '../../public/images/clients/Curries-Gravies.webp'
 const products = [
     {
         id: 1,
         title: "Freeze-Dried Vegetables",
         description: "Premium selection of corn, peas, and bell peppers. Ideal for instant soups, snack mixes, and industrial food processing.",
         features: ["100% Purity", "1-Year Shelf Life", "Quick Rehydration"],
-        image: FreezeDriedVegetables
+        image: '/images/clients/CabbageGreen-pow-pdt1.webp'
     },
     {
         id: 2,
         title: "Freeze-Dried Fruits",
         description: "Crispy slices and powders of mango, strawberry, and banana. Perfect for breakfast cereals and confectionery.",
         features: ["Nutrient Dense","Enjoy anytime",  "Vibrant Color"],
-        image: FreezeDriedFruit
+        image: '/images/clients/banana-pow-pdt1.webp'
     },
     {
         id: 3,
         title: "Freeze-Dried Herbs",
         description: "Concentrated spice blends and herbs that retain their essential oils and aromatic profiles through cold-processing.",
         features: ["Aroma Retention", "Zero Fillers", "Instant use"],
-        image: FreezeDriedHerbs
+        image: '/images/clients/Curry-Leaves-pdt1.webp'
     },
     {
         id: 4,
         title: "Ready-to-Eat Foods",
         description: "Gourmet meal solutions that require only hot water. Scalable options for institutional catering and travel retail.",
         features: ["Clean Label", "Lightweight", "Chef-Crafted"],
-        image: RTE
+        image: '/images/clients/Curries-Gravies.webp'
     }
 ];
 
@@ -67,6 +67,7 @@ const Portfolio = () => {
                             <div className="h-64 overflow-hidden">
                                 <img 
                                     src={item.image} 
+                                    loading='lazy'
                                     alt={item.title} 
                                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                                 />

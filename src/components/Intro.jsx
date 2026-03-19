@@ -3,7 +3,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import freezeDrying2 from '../images/clients/Freeze-dried-final.webp';
+// import freezeDrying2 from '../images/clients/Freeze-dried-final.webp';
+import freezeDrying2 from '../../public/images/clients/Freeze-dried-final.webp';
 
 const Intro = () => {
     return (
@@ -21,7 +22,7 @@ const Intro = () => {
         <img 
             alt="Freeze Drying Process Illustration" 
             className="relative z-10 w-[60%] h-auto drop-shadow-sm hover:scale-105 transition-transform duration-500" 
-            src={freezeDrying2} 
+            src="../public/images/clients/Freeze-dried-final.webp" 
         />
       
         {/* Bottom-Right Decorative element - Anchored to image corner */}

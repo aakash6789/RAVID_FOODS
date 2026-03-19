@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import NavLinks from './NavLinks';
 import { HashLink } from 'react-router-hash-link';
-import RavidFoodLogo from '../../images/clients/ravidFoodLogo.jfif'
+// import RavidFoodLogo from '../../images/clients/ravidFoodLogo.jfif'
 
 const NavBar = () => {
     const [top, setTop] = useState(!window.scrollY);
@@ -25,7 +25,7 @@ const NavBar = () => {
             <div className="flex flex-row justify-between items-center py-0 px-4 md:px-12">
                 <div className="flex flex-row justify-center items-center text-center font-semibold bg-yellow-400">
                     <HashLink smooth to="/#hero"> 
-                        <img src={RavidFoodLogo} className='w-16 md:w-14 lg:w-18' alt="Ravid Food Logo" />
+                        <img src='/images/clients/ravidFoodLogo.jfif' className='w-16 md:w-14 lg:w-18' alt="Ravid Food Logo" />
                     </HashLink>
                 </div>
                
