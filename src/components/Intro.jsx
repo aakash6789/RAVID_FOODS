@@ -22,7 +22,7 @@ const Intro = () => {
         <img 
             alt="Freeze Drying Process Illustration" 
             className="relative z-10 w-[60%] h-auto drop-shadow-sm hover:scale-105 transition-transform duration-500" 
-            src="../public/images/clients/Freeze-dried-final.webp" 
+            src="/images/clients/Freeze-dried-final.webp" 
         />
       
         {/* Bottom-Right Decorative element - Anchored to image corner */}
